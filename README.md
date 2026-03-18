@@ -1,5 +1,4 @@
-⚡ JavaScript Practice Repository
-This repository contains well-structured JavaScript files created during practice sessions, academic work, and personal projects. It covers fundamental to intermediate concepts, making it useful for students and beginners aiming to strengthen their programming and logic-building skills.
+⚡This repository contains well-structured JavaScript files created during practice sessions, academic work, and personal projects. It covers fundamental to intermediate concepts, making it useful for students and beginners aiming to strengthen their programming and logic-building skills.
 
 ---
 
