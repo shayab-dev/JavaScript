@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+#container{
+    height: 300px;
+    width: 230px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#container img{
+    height: 300px;
+    width: 230px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+i{
+    font-size:35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.2s;
+}   
+ 
