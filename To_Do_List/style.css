@@ -7,11 +7,8 @@
 .container{
   width: 100%;
   min-height: 100vh;
-
   background: linear-gradient(135deg, #153677, #4e085f);
-
   padding: 10px;
-
 }
 
 .todo-app{
@@ -63,4 +60,52 @@ button{
   font-size: 16px;
   cursor: pointer;
   border-radius: 40px;
+}
+
+ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(https://cdn-icons-png.flaticon.com/128/2217/2217292.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before{
+  background-image: url(https://cdn-icons-png.flaticon.com/128/5291/5291032.png);
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+  background: #edeef0;
 }
