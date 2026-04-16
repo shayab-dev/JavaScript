@@ -2,16 +2,16 @@ let inputBox = document.getElementById('input-box');
 let listContainer = document.getElementById('list-container');
 
 function addTask(){
-  if(inputBox.value == ''){
+  if(inputBox.value === ''){
     alert('You must write something!');
   }
   else{
     let li = document.createElement('li');
-    li.innerHTML = inputBox.value;
+    li.innerText = inputBox.value;
     listContainer.appendChild(li);
 
     let span = document.createElement('span');
-    span.innerHTML = '\u00d7';    // cross x
+    span.innerHTML = '\u00d7';    // cross symbol x
     li.appendChild(span);
   }
   inputBox.value = '';
@@ -33,7 +33,7 @@ function saveData(){
   localStorage.setItem('data', listContainer.innerHTML);
 }
 
-function showTask(){
+function showData(){
   listContainer.innerHTML = localStorage.getItem('data');
 }
-showTask();
+showData();
