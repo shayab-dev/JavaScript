@@ -79,3 +79,17 @@ form button{
   margin: 30px auto 10px;
   border-radius: 10px;
 }
+
+.input-group span{
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+
+#submit-error{
+  color: red;
+}
+
+
