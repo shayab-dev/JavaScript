@@ -8,7 +8,7 @@ function validateName(){
   let name = document.getElementById('contact-name').value.trim();
 
   if(name.length == 0){
-    nameError.innerHTML = 'Name is reruired';
+    nameError.innerHTML = 'Name is required';
     return false;
   }
   if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
@@ -47,14 +47,15 @@ function validateEmail(){
     return false;
   }
 
- if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
     emailError.innerHTML = 'Invalid';
     return false;
- }
+  }
 
   emailError.innerHTML = 'ok';
   emailError.style.color = 'seagreen';
   return true;
+
 }
 
 function validateMessage(){
@@ -74,9 +75,14 @@ function validateMessage(){
 
 function validateForm(){
   if(!validateName() || !validatePhone() || !validateEmail() || !validateMessage() ){
+
     submitError.style.display = 'block';
     submitError.innerHTML = 'Please fix the error to submit';
-    setTimeout(function(){submitError.style.display = 'none';},3000);
+
+    setTimeout(function(){
+      submitError.style.display = 'none';
+    },3000);
+    
     return false;
   }
 
